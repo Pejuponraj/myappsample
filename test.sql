@@ -1,0 +1,1 @@
+select Max(first_column) from table_name
