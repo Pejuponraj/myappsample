@@ -1,0 +1,172 @@
+<html xmlns:o='urn:schemas-microsoft-com:office:office' xmlns:w='urn:schemas-microsoft-com:office:word' xmlns='http://www.w3.org/TR/REC-html40'><head><meta charset='utf-8'><title>Text To Word</title></head><body><p class="query-text-line ng-star-inserted">**1. What is Power BI?** <!----><!----></p>
+<p class="query-text-line ng-star-inserted">Power BI is Microsoft create pannirukkura oru powerful business intelligence tool. Idhu data-a collect pannudhu, clean pannudhu, and adha beautiful visuals and dashboards-a convert pannudhu. End user-ku easy-a understand panna help pannum. Power BI la charts, tables, slicers, and other visuals use panni, insights present panna mudiyum. <!----><!----></p>
+<p class="query-text-line ng-star-inserted"><!----><br class="ng-star-inserted"><!----></p>
+<p class="query-text-line ng-star-inserted">➡️ **Sample DAX**: dax <!----><!----></p>
+<p class="query-text-line ng-star-inserted">Total Sales = SUM(Sales[Amount]) <!----><!----></p>
+<p class="query-text-line ng-star-inserted"><!----><br class="ng-star-inserted"><!----></p>
+<p class="query-text-line ng-star-inserted"><!----><br class="ng-star-inserted"><!----></p>
+<p class="query-text-line ng-star-inserted">**2. What are the main parts of Power BI?** <!----><!----></p>
+<p class="query-text-line ng-star-inserted">Power BI consists of: <!----><!----></p>
+<p class="query-text-line ng-star-inserted">- **Power BI Desktop** &ndash; Local machine la install panna app. Analysis, visualization, data model ellam inga create pannuvom. <!----><!----></p>
+<p class="query-text-line ng-star-inserted">- **Power BI Service** &ndash; Online portal (cloud-based). Reports publish pannitu, others-oda share pannuvom. <!----><!----></p>
+<p class="query-text-line ng-star-inserted">- **Power BI Mobile** &ndash; Mobile apps la reports view pannalaam. <!----><!----></p>
+<p class="query-text-line ng-star-inserted"><!----><br class="ng-star-inserted"><!----></p>
+<p class="query-text-line ng-star-inserted">➡️ **No DAX specific here.** <!----><!----></p>
+<p class="query-text-line ng-star-inserted"><!----><br class="ng-star-inserted"><!----></p>
+<p class="query-text-line ng-star-inserted">**3. Power Query-na enna?** <!----><!----></p>
+<p class="query-text-line ng-star-inserted">Power Query is ETL engine inside Power BI Desktop. ETL = Extract, Transform, Load. Data import pannitu, null values remove panna, data type change panna, columns merge or split panna use pannuvom. <!----><!----></p>
+<p class="query-text-line ng-star-inserted"><!----><br class="ng-star-inserted"><!----></p>
+<p class="query-text-line ng-star-inserted">➡️ **No DAX, but M language used here.** <!----><!----></p>
+<p class="query-text-line ng-star-inserted"><!----><br class="ng-star-inserted"><!----></p>
+<p class="query-text-line ng-star-inserted">**4. Power Pivot-na enna?** <!----><!----></p>
+<p class="query-text-line ng-star-inserted">Power Pivot is the data modeling engine in Power BI. You can create relationships between tables, calculated columns, and measures using DAX. <!----><!----></p>
+<p class="query-text-line ng-star-inserted"><!----><br class="ng-star-inserted"><!----></p>
+<p class="query-text-line ng-star-inserted">➡️ **Sample DAX (Calculated Column)**:dax <!----><!----></p>
+<p class="query-text-line ng-star-inserted">Discount Price = Sales[Amount] * (1 - Sales[Discount]) <!----><!----></p>
+<p class="query-text-line ng-star-inserted"><!----><br class="ng-star-inserted"><!----></p>
+<p class="query-text-line ng-star-inserted"><!----><br class="ng-star-inserted"><!----></p>
+<p class="query-text-line ng-star-inserted">**5. DAX-na enna?** <!----><!----></p>
+<p class="query-text-line ng-star-inserted">DAX = Data Analysis Expressions. Excel formulas maadhiri but more powerful. Measures and Calculated Columns create panna use pannuvom. <!----><!----></p>
+<p class="query-text-line ng-star-inserted"><!----><br class="ng-star-inserted"><!----></p>
+<p class="query-text-line ng-star-inserted">➡️ **Examples**:dax <!----><!----></p>
+<p class="query-text-line ng-star-inserted">SUM(Sales[Amount]) <!----><!----></p>
+<p class="query-text-line ng-star-inserted">CALCULATE([Total Sales], FILTER(...)) <!----><!----></p>
+<p class="query-text-line ng-star-inserted"><!----><br class="ng-star-inserted"><!----></p>
+<p class="query-text-line ng-star-inserted"><!----><br class="ng-star-inserted"><!----></p>
+<p class="query-text-line ng-star-inserted">**6. Measure vs Calculated Column?** <!----><!----></p>
+<p class="query-text-line ng-star-inserted">- **Measure**: Runtime la calculate aagum, memory save aagum. <!----><!----></p>
+<p class="query-text-line ng-star-inserted">- **Calculated Column**: Row-wise value store pannum, more memory use. <!----><!----></p>
+<p class="query-text-line ng-star-inserted"><!----><br class="ng-star-inserted"><!----></p>
+<p class="query-text-line ng-star-inserted">➡️ **DAX Examples**:dax <!----><!----></p>
+<p class="query-text-line ng-star-inserted">Total Sales = SUM(Sales[Amount]) <!----><!----></p>
+<p class="query-text-line ng-star-inserted">Tax = Sales[Amount] * 0.1 <!----><!----></p>
+<p class="query-text-line ng-star-inserted"><!----><br class="ng-star-inserted"><!----></p>
+<p class="query-text-line ng-star-inserted"><!----><br class="ng-star-inserted"><!----></p>
+<p class="query-text-line ng-star-inserted">**7. Power BI supports what data sources?** <!----><!----></p>
+<p class="query-text-line ng-star-inserted">SQL Server, Excel, CSV, Oracle, Azure, SharePoint, Google Analytics, Web APIs &ndash; ellam connect panna mudiyum. <!----><!----></p>
+<p class="query-text-line ng-star-inserted"><!----><br class="ng-star-inserted"><!----></p>
+<p class="query-text-line ng-star-inserted">➡️ **No DAX used.** <!----><!----></p>
+<p class="query-text-line ng-star-inserted"><!----><br class="ng-star-inserted"><!----></p>
+<p class="query-text-line ng-star-inserted">**8. Power BI Desktop-la 3 views enna?** <!----><!----></p>
+<p class="query-text-line ng-star-inserted">- Report View &ndash; visuals create <!----><!----></p>
+<p class="query-text-line ng-star-inserted">- Data View &ndash; table data paarthu validate <!----><!----></p>
+<p class="query-text-line ng-star-inserted">- Model View &ndash; table relationships define <!----><!----></p>
+<p class="query-text-line ng-star-inserted"><!----><br class="ng-star-inserted"><!----></p>
+<p class="query-text-line ng-star-inserted">➡️ **No DAX** <!----><!----></p>
+<p class="query-text-line ng-star-inserted"><!----><br class="ng-star-inserted"><!----></p>
+<p class="query-text-line ng-star-inserted">**9. Relationship-na enna?** <!----><!----></p>
+<p class="query-text-line ng-star-inserted">Tables join panni insights edukkuradhu. 1:Many, Many:1 madhiri types irukkum. <!----><!----></p>
+<p class="query-text-line ng-star-inserted"><!----><br class="ng-star-inserted"><!----></p>
+<p class="query-text-line ng-star-inserted">➡️ **DAX Example**:dax <!----><!----></p>
+<p class="query-text-line ng-star-inserted">CustomerRegion = RELATED(Customer[Region]) <!----><!----></p>
+<p class="query-text-line ng-star-inserted"><!----><br class="ng-star-inserted"><!----></p>
+<p class="query-text-line ng-star-inserted"><!----><br class="ng-star-inserted"><!----></p>
+<p class="query-text-line ng-star-inserted">**10. Star vs Snowflake Schema?** <!----><!----></p>
+<p class="query-text-line ng-star-inserted">- Star &ndash; fast performance, easy joins <!----><!----></p>
+<p class="query-text-line ng-star-inserted">- Snowflake &ndash; normalized, more joins <!----><!----></p>
+<p class="query-text-line ng-star-inserted"><!----><br class="ng-star-inserted"><!----></p>
+<p class="query-text-line ng-star-inserted">➡️ **Schema logic &ndash; no DAX** <!----><!----></p>
+<p class="query-text-line ng-star-inserted"><!----><br class="ng-star-inserted"><!----></p>
+<p class="query-text-line ng-star-inserted">**11. What is a slicer?** <!----><!----></p>
+<p class="query-text-line ng-star-inserted">Slicer is like a filter visual. User click panni data slice panna mudiyum. <!----><!----></p>
+<p class="query-text-line ng-star-inserted"><!----><br class="ng-star-inserted"><!----></p>
+<p class="query-text-line ng-star-inserted">➡️ **DAX to connect slicer with measure**:dax <!----><!----></p>
+<p class="query-text-line ng-star-inserted">Sales Selected Region = CALCULATE([Total Sales], Region[Region] = SELECTEDVALUE(Region[Region])) <!----><!----></p>
+<p class="query-text-line ng-star-inserted"><!----><br class="ng-star-inserted"><!----></p>
+<p class="query-text-line ng-star-inserted"><!----><br class="ng-star-inserted"><!----></p>
+<p class="query-text-line ng-star-inserted">**12. Difference between Filter and Slicer?** <!----><!----></p>
+<p class="query-text-line ng-star-inserted">- Filter pane use pannuvom specific visuals or pages filter panna <!----><!----></p>
+<p class="query-text-line ng-star-inserted">- Slicer visual-a use pannuvom user control panna <!----><!----></p>
+<p class="query-text-line ng-star-inserted"><!----><br class="ng-star-inserted"><!----></p>
+<p class="query-text-line ng-star-inserted">➡️ **DAX Example with FILTER()**:dax <!----><!----></p>
+<p class="query-text-line ng-star-inserted">West Sales = CALCULATE([Total Sales], FILTER(Region, Region[Name] = "West")) <!----><!----></p>
+<p class="query-text-line ng-star-inserted"><!----><br class="ng-star-inserted"><!----></p>
+<p class="query-text-line ng-star-inserted"><!----><br class="ng-star-inserted"><!----></p>
+<p class="query-text-line ng-star-inserted">**13. What is drill through?** <!----><!----></p>
+<p class="query-text-line ng-star-inserted">Specific value click pannitu adha detail-a explore panna use aagum. <!----><!----></p>
+<p class="query-text-line ng-star-inserted"><!----><br class="ng-star-inserted"><!----></p>
+<p class="query-text-line ng-star-inserted">➡️ **No DAX, UI-based feature** <!----><!----></p>
+<p class="query-text-line ng-star-inserted"><!----><br class="ng-star-inserted"><!----></p>
+<p class="query-text-line ng-star-inserted">**14. What is drill down and drill up?** <!----><!----></p>
+<p class="query-text-line ng-star-inserted">Hierarchy-based analysis. Month &gt; Week &gt; Day madiri. <!----><!----></p>
+<p class="query-text-line ng-star-inserted"><!----><br class="ng-star-inserted"><!----></p>
+<p class="query-text-line ng-star-inserted">➡️ **No direct DAX but date hierarchy helps.** <!----><!----></p>
+<p class="query-text-line ng-star-inserted"><!----><br class="ng-star-inserted"><!----></p>
+<p class="query-text-line ng-star-inserted">**15. How to create calculated table?** <!----><!----></p>
+<p class="query-text-line ng-star-inserted">Model la new table create panna DAX use pannuvom. <!----><!----></p>
+<p class="query-text-line ng-star-inserted"><!----><br class="ng-star-inserted"><!----></p>
+<p class="query-text-line ng-star-inserted">➡️ **Sample DAX**:dax <!----><!----></p>
+<p class="query-text-line ng-star-inserted">Sales_2024 = FILTER(Sales, Sales[Year] = 2024) <!----><!----></p>
+<p class="query-text-line ng-star-inserted"><!----><br class="ng-star-inserted"><!----></p>
+<p class="query-text-line ng-star-inserted"><!----><br class="ng-star-inserted"><!----></p>
+<p class="query-text-line ng-star-inserted">**16. Difference between ALL and ALLEXCEPT?** <!----><!----></p>
+<p class="query-text-line ng-star-inserted">- ALL &ndash; Remove all filters <!----><!----></p>
+<p class="query-text-line ng-star-inserted">- ALLEXCEPT &ndash; Remove all except few columns <!----><!----></p>
+<p class="query-text-line ng-star-inserted"><!----><br class="ng-star-inserted"><!----></p>
+<p class="query-text-line ng-star-inserted">➡️ **Example**:dax <!----><!----></p>
+<p class="query-text-line ng-star-inserted">Overall Sales = CALCULATE([Total Sales], ALL(Sales)) <!----><!----></p>
+<p class="query-text-line ng-star-inserted">dax <!----><!----></p>
+<p class="query-text-line ng-star-inserted">Sales by Region = CALCULATE([Total Sales], ALLEXCEPT(Sales, Sales[Region])) <!----><!----></p>
+<p class="query-text-line ng-star-inserted"><!----><br class="ng-star-inserted"><!----></p>
+<p class="query-text-line ng-star-inserted"><!----><br class="ng-star-inserted"><!----></p>
+<p class="query-text-line ng-star-inserted">**17. What is row context and filter context?** <!----><!----></p>
+<p class="query-text-line ng-star-inserted">- Row context &ndash; when iterating row-by-row (calculated column) <!----><!----></p>
+<p class="query-text-line ng-star-inserted">- Filter context &ndash; report/visual or filter applied values <!----><!----></p>
+<p class="query-text-line ng-star-inserted"><!----><br class="ng-star-inserted"><!----></p>
+<p class="query-text-line ng-star-inserted">➡️ **DAX Example**:dax <!----><!----></p>
+<p class="query-text-line ng-star-inserted">Discounted Sales = Sales[Amount] * 0.9 -- row context <!----><!----></p>
+<p class="query-text-line ng-star-inserted"><!----><br class="ng-star-inserted"><!----></p>
+<p class="query-text-line ng-star-inserted"><!----><br class="ng-star-inserted"><!----></p>
+<p class="query-text-line ng-star-inserted">**18. What is context transition?** <!----><!----></p>
+<p class="query-text-line ng-star-inserted">Measure la row context convert to filter context automatically <!----><!----></p>
+<p class="query-text-line ng-star-inserted"><!----><br class="ng-star-inserted"><!----></p>
+<p class="query-text-line ng-star-inserted">➡️ **Used via CALCULATE**:dax <!----><!----></p>
+<p class="query-text-line ng-star-inserted">Bonus = CALCULATE(SUM(Sales[Bonus])) <!----><!----></p>
+<p class="query-text-line ng-star-inserted"><!----><br class="ng-star-inserted"><!----></p>
+<p class="query-text-line ng-star-inserted"><!----><br class="ng-star-inserted"><!----></p>
+<p class="query-text-line ng-star-inserted">**19. What is difference between DISTINCT and VALUES?** <!----><!----></p>
+<p class="query-text-line ng-star-inserted">- DISTINCT: unique values from a column <!----><!----></p>
+<p class="query-text-line ng-star-inserted">- VALUES: unique + blank <!----><!----></p>
+<p class="query-text-line ng-star-inserted"><!----><br class="ng-star-inserted"><!----></p>
+<p class="query-text-line ng-star-inserted">➡️ **Example**:dax <!----><!----></p>
+<p class="query-text-line ng-star-inserted">AllRegions = DISTINCT(Sales[Region]) <!----><!----></p>
+<p class="query-text-line ng-star-inserted"><!----><br class="ng-star-inserted"><!----></p>
+<p class="query-text-line ng-star-inserted"><!----><br class="ng-star-inserted"><!----></p>
+<p class="query-text-line ng-star-inserted">**20. What is Time Intelligence?** <!----><!----></p>
+<p class="query-text-line ng-star-inserted">Prebuilt DAX functions for YTD, QTD, MTD etc. <!----><!----></p>
+<p class="query-text-line ng-star-inserted"><!----><br class="ng-star-inserted"><!----></p>
+<p class="query-text-line ng-star-inserted">➡️ **DAX Example**:dax <!----><!----></p>
+<p class="query-text-line ng-star-inserted">YTD Sales = TOTALYTD(SUM(Sales[Amount]), Date[Date]) <!----><!----></p>
+<p class="query-text-line ng-star-inserted">&nbsp;</p>
+<p>Power BI Interview Questions and Answers</p>
+<p>1. &nbsp;What is a KPI Card?<br>&nbsp; &nbsp; A KPI (Key Performance Indicator) card is a visual that displays a single, important metric in a prominent way.<br>&nbsp; &nbsp; DAX Example: Total Sales = SUM(Sales[Amount])</p>
+<p>2. &nbsp;What are Bookmarks?<br>&nbsp; &nbsp; Bookmarks allow you to capture specific views or states of a report page.<br>&nbsp; &nbsp; No direct DAX, UI-based feature.</p>
+<p>3. &nbsp;What are Report Themes?<br>&nbsp; &nbsp; Report themes define the color palettes, fonts, and visual styles used throughout a report.<br>&nbsp; &nbsp; No DAX involved.</p>
+<p>4. &nbsp;What are Row-Level Security (RLS)?<br>&nbsp; &nbsp; RLS restricts the data that specific users can see within a report.<br>&nbsp; &nbsp; DAX Example (used in RLS role definition): [Salesperson] = USERNAME()</p>
+<p>5. &nbsp;What is the purpose of the RELATED function in DAX?<br>&nbsp; &nbsp; The RELATED function retrieves a value from a related table.<br>&nbsp; &nbsp; DAX Example: CustomerRegion = RELATED(Customer[Region])</p>
+<p>6. &nbsp;What is the purpose of the RELATEDTABLE function in DAX?<br>&nbsp; &nbsp; The RELATEDTABLE function returns a table of related rows from another table.<br>&nbsp; &nbsp; DAX Example: SalesFromCustomer = CALCULATE(SUM(Sales[Amount]), RELATEDTABLE(Customer))</p>
+<p>7. &nbsp;What is the difference between LOOKUPVALUE and RELATED?<br>&nbsp; &nbsp; RELATED requires a defined relationship. LOOKUPVALUE allows retrieval based on matching values.<br>&nbsp; &nbsp; DAX Example (LOOKUPVALUE): RegionName = LOOKUPVALUE(Region[RegionName], Region[RegionID], Sales[RegionID])</p>
+<p>8. &nbsp;What are Parameters in Power BI?<br>&nbsp; &nbsp; Parameters allow users to dynamically change values in reports.<br>&nbsp; &nbsp; DAX Example: SalesWithParameter = CALCULATE(SUM(Sales[Amount]), FILTER(Sales, Sales[Date] &gt;= [StartDateParameter] &amp;&amp; Sales[Date] &lt;= [EndDateParameter]))</p>
+<p>9. &nbsp;What is a What-If parameter?<br>&nbsp; &nbsp; What-If parameters let you explore the impact of changing input values.<br>&nbsp; &nbsp; DAX example: ProjectedSales = SUM(Sales[Amount]) * [GrowthRateParameter]</p>
+<p>10. What is the purpose of the CALCULATE function?<br>&nbsp; &nbsp; CALCULATE modifies the filter context of a measure.<br>&nbsp; &nbsp; DAX Example: SalesInWestRegion = CALCULATE(SUM(Sales[Amount]), Region[RegionName] = "West")</p>
+<p>11. What is the purpose of the FILTER function?<br>&nbsp; &nbsp; The FILTER function returns a filtered table.<br>&nbsp; &nbsp; DAX Example: LargeOrders = CALCULATE(SUM(Sales[Amount]), FILTER(Sales, Sales[Amount] &gt; 1000))</p>
+<p>12. What is the purpose of the ALL function?<br>&nbsp; &nbsp; The ALL function removes all filters.<br>&nbsp; &nbsp; DAX Example: TotalSalesAllRegions = CALCULATE(SUM(Sales[Amount]), ALL(Region))</p>
+<p>13. What is the purpose of the ALLEXCEPT function?<br>&nbsp; &nbsp; The ALLEXCEPT function removes all filters except specified columns.<br>&nbsp; &nbsp; DAX Example: SalesByRegion = CALCULATE(SUM(Sales[Amount]), ALLEXCEPT(Sales, Sales[Region]))</p>
+<p>14. What is the purpose of the VALUES function?<br>&nbsp; &nbsp; The VALUES function returns unique values from a column.<br>&nbsp; &nbsp; DAX Example: UniqueRegions = VALUES(Region[RegionName])</p>
+<p>15. What is the purpose of the DISTINCT function?<br>&nbsp; &nbsp; The DISTINCT function returns unique values (no blanks).<br>&nbsp; &nbsp; DAX Example: UniqueRegionsNoBlank = DISTINCT(Region[RegionName])</p>
+<p>16. What is the purpose of the USERNAME() function?<br>&nbsp; &nbsp; The USERNAME() function returns the current user's username.<br>&nbsp; &nbsp; DAX Example (used in RLS): [Salesperson] = USERNAME()</p>
+<p>17. What is the purpose of the USERPRINCIPALNAME() function?<br>&nbsp; &nbsp; The USERPRINCIPALNAME() function returns the user's principal name.<br>&nbsp; &nbsp; DAX Example (used in RLS): [UserEmail] = USERPRINCIPALNAME()</p>
+<p>18. How do you handle many-to-many relationships in Power BI?<br>&nbsp; &nbsp; Using a bridge table, or by using the TREATAS function.<br>&nbsp; &nbsp; DAX example (TREATAS): SalesFiltered = CALCULATE(SUM(Sales[Amount]), TREATAS(VALUES(ProductCategory[Category]), Products[Category]))</p>
+<p>19. What are aggregations in Power BI?<br>&nbsp; &nbsp; Aggregations are summaries of data.<br>&nbsp; &nbsp; DAX Examples: TotalSales = SUM(Sales[Amount]), AveragePrice = AVERAGE(Sales[Price])</p>
+<p>20. What is the purpose of the SUMX function?<br>&nbsp; &nbsp; SUMX iterates through a table and calculates the sum of an expression.<br>&nbsp; &nbsp; DAX Example: TotalProfit = SUMX(Sales, Sales[Amount] * Sales[ProfitMargin])</p>
+<p>21. What is the purpose of the AVERAGEX function?<br>&nbsp; &nbsp; AVERAGEX iterates through a table and calculates the average of an expression.<br>&nbsp; &nbsp; DAX Example: AverageProfitMargin = AVERAGEX(Sales, Sales[ProfitMargin])</p>
+<p>22. What is the purpose of the COUNTROWS function?<br>&nbsp; &nbsp; COUNTROWS returns the number of rows in a table.<br>&nbsp; &nbsp; DAX Example: NumberOfOrders = COUNTROWS(Sales)</p>
+<p>23. What is the purpose of the DIVIDE function?<br>&nbsp; &nbsp; DIVIDE performs division and handles division by zero errors.<br>&nbsp; &nbsp; DAX Example: ProfitMargin = DIVIDE(SUM(Sales[Profit]), SUM(Sales[Amount]))</p>
+<p>24. What are date tables in Power BI?<br>&nbsp; &nbsp; Date tables are dedicated tables for time intelligence.<br>&nbsp; &nbsp; DAX Example (creating a date table): DateTable = CALENDARAUTO()</p>
+<p>25. What are time intelligence functions?<br>&nbsp; &nbsp; Time intelligence functions perform calculations over time periods.<br>&nbsp; &nbsp; DAX Examples: YTD Sales = TOTALYTD(SUM(Sales[Amount]), 'Date'[Date]), MTD Sales = TOTALMTD(SUM(Sales[Amount]), 'Date'[Date])</p>
+<p>26. What is the purpose of the RANKX function?<br>&nbsp; &nbsp; RANKX ranks values in a table.<br>&nbsp; &nbsp; DAX Example: SalesRank = RANKX(ALL(Sales[Product]), SUM(Sales[Amount]))</p>
+<p>27. What are measures using variables?<br>&nbsp; &nbsp; Variables allow storing intermediate results in a measure.<br>&nbsp; &nbsp; DAX Example: TotalSalesWithDiscount = VAR DiscountedAmount = SUM(Sales[Amount]) * 0.9 RETURN DiscountedAmount</p>
+<p>28. What are calculated tables?<br>&nbsp; &nbsp; Calculated tables are tables created using DAX.<br>&nbsp; &nbsp; DAX Example: HighValueCustomers = FILTER(Customer, Customer[TotalSpend] &gt; 1000)</p>
+<p>29. What are performance considerations in Power BI?<br>&nbsp; &nbsp; Optimize DAX queries, reduce data model size, use aggregations, minimize visuals.</p>
+<p>30. What are dataflows?<br>&nbsp; &nbsp; Dataflows are cloud-based ETL processes in Power BI.<br>&nbsp; &nbsp; No direct DAX in dataflow creation.</p>
+<p>&nbsp;</p></body></html>
