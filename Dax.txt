@@ -1,0 +1,45 @@
+Location Analysis
+Understanding trip locations is crucial for optimizing ride distribution, demand forecasting, and operational efficiency. This analysis focuses on:
+	Most Frequent Pickup Point
+•	Identify the most common starting locations for trips.
+•	Helps in optimizing driver availability and dynamic pricing strategies.
+DAX------
+Most Frequent Pickup Point = 
+VAR pickuppoint=TOPN(1,
+                       SUMMARIZE('Trip Details','Location Table'[Location], "pickup Point",COUNT('Trip Details'[Trip ID])),[pickup Point],DESC)
+RETURN CONCATENATEX(pickuppoint,'Location Table'[Location],",")
+
+--------------------------------------------
+Most Frequent Pickup Point = 
+VAR pickuppoint=TOPN(1,
+                       SUMMARIZE('Trip Details','Location Table'[Location], "pickup Point",COUNT('Trip Details'[Trip ID])),[pickup Point],DESC)
+RETURN CONCATENATEX(pickuppoint,'Location Table'[Location],",")
+
+DAX-----------------------------
+Most frequent Drop off point = 
+ VAR dropofcounts=ADDCOLUMNS(SUMMARIZE('Trip Details','Location Table'[Location]),"DropoffCount",CALCULATE(COUNT('Trip Details'[Trip ID]),USERELATIONSHIP('Trip Details'[DOLocationID],'Location Table'[LocationID])
+ )
+ )
+ VAR rankeddropoff=ADDCOLUMNS(dropofcounts,"Rank",RANKX(dropofcounts,[DropoffCount], ,DESC,Dense)
+ )
+ VAR Topdropoff=FILTER(rankeddropoff,[Rank]=1)
+
+ RETURN CONCATENATEX(Topdropoff,'Location Table'[Location], ",")
+-------------------------------------------------------------------------
+Most frequent Drop off point = 
+ VAR dropofcounts=ADDCOLUMNS(SUMMARIZE('Trip Details','Location Table'[Location]),"DropoffCount",CALCULATE(COUNT('Trip Details'[Trip ID]),USERELATIONSHIP('Trip Details'[DOLocationID],'Location Table'[LocationID])
+ )
+ )
+ VAR rankeddropoff=ADDCOLUMNS(dropofcounts,"Rank",RANKX(dropofcounts,[DropoffCount], ,DESC,Dense)
+ )
+ VAR Topdropoff=FILTER(rankeddropoff,[Rank]=1)
+
+ RETURN CONCATENATEX(Topdropoff,'Location Table'[Location], ",")
+DAX--------------
+Farthest Trip Location = 
+var maxdistanc=MAX('Trip Details'[trip_distance])
+
+VAR longtrip=FILTER('Trip Details','Trip Details'[trip_distance]=maxdistanc)
+RETURN
+CONCATENATEX(
+               longtrip,"Pick Up: " & LOOKUPVALUE('Location Table'[Location],'Location Table'[LocationID],'Trip Details'[PULocationID])& "  Drop off : " & LOOKUPVALUE('Location Table'[Location],'Location Table'[LocationID],'Trip Details'[DOLocationID]) & " (" & FORMAT('Trip Details'[trip_distance],"0.0") & "Miles )", ",")
