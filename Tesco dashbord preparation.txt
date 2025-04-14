@@ -1,0 +1,9 @@
+!. check our data clearly 
+2. As per our Tesco.csv find Avg and total  revenue for store, online  and total revenue(need to create new column)
+3. Need to apply filter as per store location month or year , product and age group   ( need to find new column month name)
+4. monthly sales line chart 
+5. scatter chart price vs revenue
+6. show correlation use card(  apply dax query)
+7.need possible more slicer 
+8. heat map for product wise(row) or age group    price, revenue,  
+9. drill throw  for product, price revenue
