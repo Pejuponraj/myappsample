@@ -1,0 +1,32 @@
+1. What is power b?
+  Power bi is a business intelligent tools developed  by Microsoft its used for data management  and create  visual for analysis purpose  and decision  making 
+2. What is the main part of power bi?
+    1. power bi desktop    - used for creating visual for decision making purpose 
+    2. power bi service -   its used for sharing the    visual report online 
+    3. power bi mobile - its we can used in mobile  
+3. What is power query?
+   Power query is ETL extract, transform, load    for remove  the null value, change data type, insert new column, separate the column, merge the column 
+4. what is Power pivot  ?
+
+      its  used for connect the multiple table and advance level analysis using Dax query in power bi desktop 
+5. What is DAX?
+   Data analysis expression   - its used for creating new column and measure for the  analysis purpose presentation 
+6. Measure Vs calculated column
+   Measure is for aggregative related purpose
+   Column   is create new column used  row wise expressions
+7. What are the 3 Views in Power BI Desktop?
+  1. report view  - create visual
+  2. data view -  check data 
+  3. Modal view   its relationship between tables 
+8.What is the relationship?
+  its connection between the two table based on the common column     like primary key , foreign key
+9. What  does slicer means in power bi?
+ 
+A slicer is a visual filter that allows users to filter data or visuals based on selected criteria
+
+10. Difference between Filter and Slicer?** 
+- Filter  pane its filter the data as page visual or all page visual
+- Slicer   pane its filter the visual as per our selected criteria
+
+
+ 
