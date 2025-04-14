@@ -3,7 +3,27 @@
 3. Need to apply filter as per store location month or year , product and age group   ( need to find new column month name)
 4. monthly sales line chart 
 5. scatter chart price vs revenue
-6. show correlation use card(  apply dax query)
+6. show correlation use card(  apply Dax query)
 7.need possible more slicer 
 8. heat map for product wise(row) or age group    price, revenue,  
 9. drill throw  for product, price revenue
+
+
+Project Summary
+I have worked on these projects to help the company make effective decisions that improved the business performance,
+reduced unwanted losses in sales and inventory and supported session wise sales reporting 
+
+
+
+Responsibilities
+1. Created Power Bi dashboards and reports for sales, inventory, store performance and session-wise sales analyses.
+
+2.Write the DAX query for correlation between sales and Revenue and apply filters for product-wise and age group-wise analysis
+
+3.Created a product-wise heat map to visualize  performance such as sales, revenue, profit and correlation
+
+4. Supported other team members by writing DAX queries to connect the tables and display sales profit and loss and highlighting  the first and last values based on the filters
+
+5. Managed Git and GitHub for version control to manage and track report development.
+
+
