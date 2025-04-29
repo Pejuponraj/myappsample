@@ -4,4 +4,14 @@
 12. What is drill down and drill up ?(Hierarchy-based analysis. Month > Week > Day   like this )
 Drill Down is used to explore detailed levels of data, and Drill Up is used to return to higher-level summary data in a visual hierarchy
 13. How to create calculated table?
-In the data view or modal view select new table, Table_name = filter(  select table name , select as per our criteria ) 
+In the data view or modal view select new table, Table name = filter(  select table name , select as per our criteria) 
+14. Difference between ALL and ALLEXCEPT? 
+  All- calculate(sum(columnname), all(tablename))  its sum of all column value with out any slicer 
+  ALLEXCEPT - calculate(sum(columnname),  ALLEXCEPT(tablename, column name))  its sum the values as per column name
+15. What is row context and filter context?
+row context -- its used in  calculated  column   its worked as per row wise 
+Filter context -- its used in measure  its works as per   aggerated function  
+16.What is context transition?
+ context transition   its used in column  if we use  measures aggerated function not woking as per filter so we can use calculate(sum(sales))  its working now in filter   ie  row context is now work as filter context 
+17.What is difference between DISTINCT and VALUES?
+DISTINCT- AND VALUES its both are show without duplicate   if we use VALUES  when we userd in filter its show Blank row also but DISTINCT not show Blank rows  its works only in filter otverwise both are same dax query 
