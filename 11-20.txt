@@ -1,0 +1,7 @@
+11. What is drill through?
+ Drill Through-- lets users right-click on a visual and navigate to a detailed report page based on that selected value
+
+12. What is drill down and drill up ?(Hierarchy-based analysis. Month > Week > Day   like this )
+Drill Down is used to explore detailed levels of data, and Drill Up is used to return to higher-level summary data in a visual hierarchy
+13. How to create calculated table?
+In the data view or modal view select new table, Table_name = filter(  select table name , select as per our criteria ) 
