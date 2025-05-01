@@ -14,4 +14,14 @@ Filter context -- its used in measure  its works as per   aggerated function
 16.What is context transition?
  context transition   its used in column  if we use  measures aggerated function not woking as per filter so we can use calculate(sum(sales))  its working now in filter   ie  row context is now work as filter context 
 17.What is difference between DISTINCT and VALUES?
-DISTINCT- AND VALUES its both are show without duplicate   if we use VALUES  when we userd in filter its show Blank row also but DISTINCT not show Blank rows  its works only in filter otverwise both are same dax query 
+DISTINCT- AND VALUES its both are show without duplicate   if we use VALUES  when we used in filter its show Blank row also but DISTINCT not show Blank rows  its works only in filter overwise both are same Dax query
+18.Time Intelligence Functions
+
+  | **Function**            | **Use Case**                                        |
+|-------------------------|-----------------------------------------------------|
+| `TOTALYTD()`            | **Year-to-Date** calculations (e.g., sales from the start of the year to the current date) |
+| `TOTALQTD()`            | **Quarter-to-Date** calculations (e.g., sales from the start of the quarter to the current date) |
+| `TOTALMTD()`            | **Month-to-Date** calculations (e.g., sales from the start of the month to the current date) |
+| `SAMEPERIODLASTYEAR()`  | **Same period last year** comparison (e.g., YoY comparison) |
+| `PARALLELPERIOD()`      | **Fixed period shift** (e.g., comparing this month to the same month last year or last quarter) |
+| `DATEADD()`             | **Shifting dates** by a fixed interval (e.g., previous month, next quarter) | 
